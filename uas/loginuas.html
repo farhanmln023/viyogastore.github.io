@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - VIYOGAstore</title>
+    <link rel="stylesheet" href="loginuas.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-logo">
+            <h1>VIYOGA<span class="tec">store</span></h1>
+        </div>
+        <ul>
+            <li><a href="navbar.html">Home</a></li>
+            <li><a href="loginuas.html">Login</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Search Form -->
+        <form class="search-form" onsubmit="searchFunction(event)">
+            <input type="text" id="searchInput" placeholder="Cari produk..." required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- Konten utama -->
+    <div class="main-content">
+        <div class="wraper">
+            <form action="">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="lupa-pass">
+                    <label><input type="checkbox"> Ingatkan Saya</label>
+                    <a href="#">Lupa Password?</a>
+                </div>
+                <button type="submit" class="tombol">Login</button>
+                <div class="link-daftar">
+                    <p>Tidak punya akun? <a href="#">Daftar</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script Search -->
+    <script>
+        function searchFunction(event) {
+            event.preventDefault();
+            const query = document.getElementById('searchInput').value;
+            alert('Anda mencari: ' + query);
+        }
+    </script>
+</body>
+</html>

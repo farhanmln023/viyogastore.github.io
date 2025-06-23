@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - VIYOGAstore</title>
+    <link rel="stylesheet" href="uas.css">
+    <style>
+        .produk-container {
+            padding: 120px 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .produk-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .produk-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .produk-item .produk-info {
+            padding: 15px;
+            flex: 1;
+        }
+        .produk-item h3 {
+            margin-bottom: 8px;
+            font-size: 20px;
+            color: rgb(68, 0, 255);
+        }
+        .produk-item p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 12px;
+        }
+        .produk-item .cta {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: rgb(68, 0, 255);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <h1>VIYOGA<span class="tec">store</span></h1>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="navbar.html">Home</a></li>
+            <li><a href="loginuas.html">Login</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="navbar-search">
+            <input type="text" placeholder="Cari produk...">
+            <button>Search</button>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Produk Section Start -->
+    <section class="produk-container">
+        <div class="produk-item">
+            <img src="kemeja.webp" alt="Kemeja Eksklusif">
+            <div class="produk-info">
+                <h3>Kemeja Eksklusif</h3>
+                <p>Kemeja pria modern berbahan katun premium, cocok untuk acara formal & kasual.</p>
+                <a href="#" class="cta">Beli Sekarang</a>
+            </div>
+        </div>
+
+        <div class="produk-item">
+            <img src="jaket.webp" alt="Jaket Casual">
+            <div class="produk-info">
+                <h3>Jaket Casual</h3>
+                <p>Jaket nyaman dengan desain minimalis, hangat dipakai saat musim dingin.</p>
+                <a href="#" class="cta">Beli Sekarang</a>
+            </div>
+        </div>
+
+        <div class="produk-item">
+            <img src="kaos.webp" alt="Kaos Streetwear">
+            <div class="produk-info">
+                <h3>Kaos Streetwear</h3>
+                <p>Kaos santai dengan desain kekinian, cocok untuk gaya harian anak muda.</p>
+                <a href="#" class="cta">Beli Sekarang</a>
+            </div>
+        </div>
+
+        <div class="produk-item">
+            <img src="ginee_20230317011739676_6512322684_800x.webp" alt="Celana Chino">
+            <div class="produk-info">
+                <h3>Celana Chino</h3>
+                <p>Celana panjang bahan chino yang nyaman, cocok untuk kerja maupun hangout.</p>
+                <a href="#" class="cta">Beli Sekarang</a>
+            </div>
+        </div>
+    </section>
+    <!-- Produk Section End -->
+</body>
+</html>
